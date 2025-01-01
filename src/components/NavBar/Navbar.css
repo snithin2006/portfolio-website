@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  background-color: #000000;
+  color: white;
+  font-size: 150%;
+  font-family: 'ComicSansMS', sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 150%;
+  font-weight: 900; /* Use a bold weight to make the font thicker */
+}
+
+.nav-logo span {
+  background: linear-gradient(to right, #ff516b, #fc6a77);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
