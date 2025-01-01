@@ -1,13 +1,14 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 2%;
-  background-color: #000000;
-  color: white;
-  font-size: 150%;
-  font-family: 'ComicSansMS', sans-serif;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #020202;
+  color: #e2ebec;
+  font-size: 150%;
+  font-family: 'Bangers', sans-serif;
   align-items: center;
 }
 
@@ -17,15 +18,12 @@ nav {
 }
 
 .nav-logo span {
-  background: linear-gradient(to right, #ff516b, #fc6a77);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ff516b;
 }
 
 .nav-links a {
   margin: 0 15px;
   text-decoration: none;
-  color: white;
+  color: #e2ebec;
   font-weight: bold;
 }

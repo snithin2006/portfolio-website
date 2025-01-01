@@ -1,48 +1,46 @@
-/* Overall banner container to handle alignment */
 .banner-container {
     width: 100%;
     height: 120px;
-    /* Adjust height as needed */
     background-color: #000;
-    /* Black bar */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
+    border: 3px solid #000;
 }
 
-/* Dotted background */
 .banner-dots {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        radial-gradient(circle, #ffffff 4px, transparent 2px), /* Dots */
-        radial-gradient(circle, #ffffff 4px, transparent 2px); /* Offset dots */
+    background-image:
+        radial-gradient(circle, #ffffff 4px, transparent 2px),
+        radial-gradient(circle, #ffffff 4px, transparent 2px);
     background-size: 16px 16px;
-    background-position: 0 0, 8px 8px; /* Offset one row horizontally */
-    z-index: 1; /* Below text */
+    background-position: 0 0, 8px 8px;
+    z-index: 1;
 }
 
-
-
-/* Main banner text */
 .banner-text {
-    font-size: 5rem;
-    /* Adjust for desired size */
+    position: absolute;
+    justify-content: center;
+    font-size: 4rem;
     font-family: 'Bangers', sans-serif;
-    background: linear-gradient(to right, #ff0000, #ffcccb);
-    /* Comic-style fading */
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #f7db3f;
     font-weight: bold;
     text-transform: uppercase;
     z-index: 2;
-    /* Ensures text appears above the dots */
-    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
-    /* Comic shadow */
+    letter-spacing: 6px;
+    text-shadow:
+        -3px -3px 0 #000,
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000;
+    filter: drop-shadow(-5px 6px 0.75px #000)
+            drop-shadow(3px -3px 0.75px rgba(255, 0, 0, 1))
+            drop-shadow(2px 2px 0.75px rgba(255, 0, 0, 1))
+            drop-shadow(-3px 3px 0.75px rgba(255, 0, 0, 1));
 }
