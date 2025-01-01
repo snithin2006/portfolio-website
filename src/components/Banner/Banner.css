@@ -42,5 +42,5 @@
     filter: drop-shadow(-5px 6px 0.75px #000)
             drop-shadow(3px -3px 0.75px rgba(255, 0, 0, 1))
             drop-shadow(2px 2px 0.75px rgba(255, 0, 0, 1))
-            drop-shadow(-3px 3px 0.75px rgba(255, 0, 0, 1));
+            drop-shadow(-6px 4px 0.75px rgba(255, 0, 0, 1));
 }
