@@ -1,29 +1,35 @@
+/* Navbar container styles */
 nav {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  height: 50px;
+  width: 100%; /* Make it span the entire width */
+  z-index: 1000; /* Ensure it stays above other elements */
   display: flex;
-  justify-content: space-between;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  background-color: #020202;
-  color: #e2ebec;
-  font-size: 150%;
-  font-family: 'Bangers', sans-serif;
+  justify-content: center; /* Center the links */
   align-items: center;
+  background-color: #020202; /* Dark background color */
+  color: #e2ebec; /* Default text color */
+  font-family: 'Bangers', sans-serif; /* Comic-style font */
 }
 
-.nav-logo {
-  font-size: 150%;
-  font-weight: 900; /* Use a bold weight to make the font thicker */
+/* Link container styles */
+.nav-links {
+  display: flex; /* Align links horizontally */
 }
 
-.nav-logo span {
-  color: #ff516b;
-}
-
+/* Link styles */
 .nav-links a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #e2ebec;
-  font-weight: bold;
+  margin: 0 20px; /* Spacing between links */
+  text-decoration: none; /* Remove underline */
+  color: #e2ebec; /* Link color */
+  font-weight: bold; /* Bold font */
+  font-size: 150%; /* Larger font size */
+  transition: color 0.3s; /* Smooth transition on hover */
+}
+
+/* Link hover effect */
+.nav-links a:hover {
+  color: #ff516b; /* Highlight color on hover */
 }
