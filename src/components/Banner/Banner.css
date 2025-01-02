@@ -17,16 +17,15 @@
     width: 100%;
     height: 100%;
     background-image:
-        radial-gradient(circle, #ffffff 4px, transparent 2px),
-        radial-gradient(circle, #ffffff 4px, transparent 2px);
+        radial-gradient(circle, #fbfde1 3px, transparent 2px),
+        radial-gradient(circle, #fbfde1 3px, transparent 2px);
     background-size: 16px 16px;
     background-position: 0 0, 8px 8px;
     z-index: 1;
 }
 
 .banner-text {
-    position: absolute;
-    justify-content: center;
+    position: relative;
     font-size: 4rem;
     font-family: 'Bangers', sans-serif;
     color: #f7db3f;
@@ -39,8 +38,78 @@
         3px -3px 0 #000,
         -3px 3px 0 #000,
         3px 3px 0 #000;
-    filter: drop-shadow(-5px 6px 0.75px #000)
-            drop-shadow(3px -3px 0.75px rgba(255, 0, 0, 1))
-            drop-shadow(2px 2px 0.75px rgba(255, 0, 0, 1))
-            drop-shadow(-6px 4px 0.75px rgba(255, 0, 0, 1));
+    filter: drop-shadow(-5px 6px 0.75px #000) drop-shadow(3px -3px 0.75px rgba(255, 0, 0, 1)) drop-shadow(2px 2px 0.75px rgba(255, 0, 0, 1)) drop-shadow(-6px 4px 0.75px rgba(255, 0, 0, 1));
+}
+
+.burst {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.burst.left {
+    left: 2.5%;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.burst img {
+    width: 275px;
+    /* Set the desired size */
+    height: auto;
+    /* Automatically adjust height to maintain aspect ratio */
+    z-index: 1;
+    filter: drop-shadow(-3px 3px 1px #4bd3cc)
+            drop-shadow(3px -3px 1px #4bd3cc)
+            drop-shadow(-3px -3px 1px #4bd3cc)
+            drop-shadow(3px 3px 1px #4bd3cc);
+    rotate: -10deg;
+}
+
+.burst.right {
+    right: 2.5%;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.bubble-text-left {
+    position: absolute;
+    font-family: 'Bangers', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #fa596a;
+    text-shadow:
+        -3px -3px 0 #000,
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000;
+    filter: drop-shadow(-3px 3px 1px #000);
+    pointer-events: none;
+    padding-left: 20px;
+    rotate: -10deg;
+    z-index: 2;
+}
+
+.bubble-text-right {
+    position: absolute;
+    font-family: 'Bangers', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #fa596a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-shadow:
+        -3px -3px 0 #000,
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000;
+    filter: drop-shadow(-3px 3px 1px #000);
+    rotate: 10deg;
+    z-index: 2;
 }
