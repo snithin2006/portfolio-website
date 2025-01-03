@@ -1,6 +1,6 @@
 .banner-container {
     width: 100%;
-    height: 120px;
+    height: 150px;
     background-color: #000;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
     height: auto;
     /* Automatically adjust height to maintain aspect ratio */
     z-index: 1;
-    padding-top: 10px;
+    padding-top: 25px;
     filter: drop-shadow(-3px 3px 1px #4bd3cc)
             drop-shadow(3px -3px 1px #4bd3cc)
             drop-shadow(-3px -3px 1px #4bd3cc)
@@ -103,7 +103,7 @@
         3px 3px 0 #000;
     filter: drop-shadow(-3px 3px 1px #000);
     pointer-events: none;
-    padding-top: 10px;
+    padding-top: 25px;
     padding-left: 10px;
     rotate: -7.5deg;
     z-index: 2;
