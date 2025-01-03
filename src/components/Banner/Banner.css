@@ -26,7 +26,7 @@
 
 .banner-text {
     position: relative;
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: 'Bangers', sans-serif;
     color: #f7db3f;
     font-weight: bold;
@@ -50,7 +50,7 @@
 }
 
 .burst.left {
-    left: 2.5%;
+    left: 0%;
     top: 40%;
     transform: translateY(-50%);
 }
@@ -70,7 +70,7 @@
 }
 
 .burst.right img {
-    width: 300px;
+    width: 325px;
     /* Set the desired size */
     height: auto;
     /* Automatically adjust height to maintain aspect ratio */
@@ -84,9 +84,9 @@
 }
 
 .burst.right {
-    right: 2.5%;
+    right: 0%;
     top: 60%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(6%);
 }
 
 .bubble-text-left {

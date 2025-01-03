@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/NavBar/Navbar';
 import ComicGrid from './components/ComicGrid/Comicgrid';
+import ComicPannel from './components/ComicPannel/Comicpannel';
 import Banner from './components/Banner/Banner';
 import './App.css';
 
