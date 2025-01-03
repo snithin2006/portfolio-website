@@ -14,7 +14,7 @@ const Banner = () => {
       <h1 className="banner-text">Nithin Sivakumar</h1>
 
       <div className="burst right">
-        <img src="/images/bubble2.png" alt="BAM Bubble" />
+        <img src="/images/bubble1.png" alt="BAM Bubble" />
         <span className="bubble-text-right">ENGINEER</span>
       </div>
     </div>

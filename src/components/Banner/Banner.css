@@ -1,13 +1,12 @@
 .banner-container {
     width: 100%;
-    height: 150px;
+    height:15vmax;  /* 150px / 624px * 100 */
     background-color: #000;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     position: relative;
-    overflow: hidden;
-    border: 3px solid #000;
+    border-bottom: 0.75vh solid #000;  /* 3px / 624px * 100 */
 }
 
 .banner-dots {
@@ -17,28 +16,31 @@
     width: 100%;
     height: 100%;
     background-image:
-        radial-gradient(circle, #fbfde1 3px, transparent 2px),
-        radial-gradient(circle, #fbfde1 3px, transparent 2px);
-    background-size: 16px 16px;
-    background-position: 0 0, 8px 8px;
+        radial-gradient(circle, #fbfde1 0.26vw, transparent 0.174vw),  /* 3px and 2px / 1152px * 100 */
+        radial-gradient(circle, #fbfde1 0.26vw, transparent 0.174vw);
+    background-size: 1.389vw 1.389vw;  /* 16px / 1152px * 100 */
+    background-position: 0 0, 0.694vw 0.694vw;  /* 8px / 1152px * 100 */
     z-index: 1;
 }
 
 .banner-text {
     position: relative;
-    font-size: 5rem;
+    font-size: 7vmax;  /* 5rem converted to viewport width */
     font-family: 'Bangers', sans-serif;
     color: #f7db3f;
     font-weight: bold;
     text-transform: uppercase;
     z-index: 2;
-    letter-spacing: 6px;
+    letter-spacing: 0.521vw;  /* 6px / 1152px * 100 */
     text-shadow:
-        -3px -3px 0 #000,
-        3px -3px 0 #000,
-        -3px 3px 0 #000,
-        3px 3px 0 #000;
-    filter: drop-shadow(-5px 6px 0.75px #000) drop-shadow(3px -3px 0.75px rgba(255, 0, 0, 1)) drop-shadow(2px 2px 0.75px rgba(255, 0, 0, 1)) drop-shadow(-6px 4px 0.75px rgba(255, 0, 0, 1));
+        -0.26vw -0.26vw 0 #000,  /* 3px / 1152px * 100 */
+        0.26vw -0.26vw 0 #000,
+        -0.26vw 0.26vw 0 #000,
+        0.26vw 0.26vw 0 #000;
+    filter: drop-shadow(-0.434vw 0.521vw 0.065vw #000)  /* 5px 6px 0.75px converted */
+           drop-shadow(0.26vw -0.26vw 0.065vw rgba(255, 0, 0, 1))
+           drop-shadow(0.174vw 0.174vw 0.065vw rgba(255, 0, 0, 1))
+           drop-shadow(-0.521vw 0.347vw 0.065vw rgba(255, 0, 0, 1));
 }
 
 .burst {
@@ -52,34 +54,30 @@
 .burst.left {
     left: 0%;
     top: 40%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-5%);
 }
 
 .burst.left img {
-    width: 300px;
-    /* Set the desired size */
+    width: 25vw;  /* 300px / 1152px * 100 */
     height: auto;
-    /* Automatically adjust height to maintain aspect ratio */
     z-index: 1;
-    padding-top: 25px;
-    filter: drop-shadow(-3px 3px 1px #4bd3cc)
-            drop-shadow(3px -3px 1px #4bd3cc)
-            drop-shadow(-3px -3px 1px #4bd3cc)
-            drop-shadow(3px 3px 1px #4bd3cc);
+    padding-top: 5.2vh;  /* 25px / 624px * 100 */
+    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #4bd3cc)
+           drop-shadow(0.26vw -0.26vw 0.087vw #4bd3cc)
+           drop-shadow(-0.26vw -0.26vw 0.087vw #4bd3cc)
+           drop-shadow(0.26vw 0.26vw 0.087vw #4bd3cc);
     rotate: -10deg;
 }
 
 .burst.right img {
-    width: 325px;
-    /* Set the desired size */
+    width: 28.212vw;  /* 325px / 1152px * 100 */
     height: auto;
-    /* Automatically adjust height to maintain aspect ratio */
     z-index: 1;
-    padding-bottom: 30px;
-    filter: drop-shadow(-3px 3px 1px #4bd3cc)
-            drop-shadow(3px -3px 1px #4bd3cc)
-            drop-shadow(-3px -3px 1px #4bd3cc)
-            drop-shadow(3px 3px 1px #4bd3cc);
+    padding-bottom: 4.808vh;  /* 30px / 624px * 100 */
+    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #4bd3cc)
+           drop-shadow(0.26vw -0.26vw 0.087vw #4bd3cc)
+           drop-shadow(-0.26vw -0.26vw 0.087vw #4bd3cc)
+           drop-shadow(0.26vw 0.26vw 0.087vw #4bd3cc);
     rotate: 10deg;
 }
 
@@ -92,19 +90,19 @@
 .bubble-text-left {
     position: absolute;
     font-family: 'Bangers', sans-serif;
-    font-size: 3rem;
+    font-size: 4.5vw;  /* 3rem converted to viewport width */
     font-weight: bold;
-    letter-spacing: 6px;
+    letter-spacing: 0.521vw;  /* 6px / 1152px * 100 */
     color: #fa596a;
     text-shadow:
-        -3px -3px 0 #000,
-        3px -3px 0 #000,
-        -3px 3px 0 #000,
-        3px 3px 0 #000;
-    filter: drop-shadow(-3px 3px 1px #000);
+        -0.26vw -0.26vw 0 #000,
+        0.26vw -0.26vw 0 #000,
+        -0.26vw 0.26vw 0 #000,
+        0.26vw 0.26vw 0 #000;
+    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #000);
     pointer-events: none;
-    padding-top: 25px;
-    padding-left: 10px;
+    padding-top: 4.006vh;  /* 25px / 624px * 100 */
+    padding-left: 0.868vw;  /* 10px / 1152px * 100 */
     rotate: -7.5deg;
     z-index: 2;
 }
@@ -112,20 +110,19 @@
 .bubble-text-right {
     position: absolute;
     font-family: 'Bangers', sans-serif;
-    font-size: 3rem;
+    font-size: 4.8vw;  /* 3rem converted to viewport width */
     font-weight: bold;
-    letter-spacing: 6px;
+    letter-spacing: 0.521vw;  /* 6px / 1152px * 100 */
     color: #fa596a;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    pointer-events: none;
-    padding-right: 7.5px;
-    padding-bottom: 25px;
     text-shadow:
-        -3px -3px 0 #000,
-        3px -3px 0 #000,
-        -3px 3px 0 #000,
-        3px 3px 0 #000;
-    filter: drop-shadow(-3px 3px 1px #000);
+        -0.26vw -0.26vw 0 #000,
+        0.26vw -0.26vw 0 #000,
+        -0.26vw 0.26vw 0 #000,
+        0.26vw 0.26vw 0 #000;
+    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #000);
+    pointer-events: none;
+    padding-right: 0.651vw;  /* 7.5px / 1152px * 100 */
+    padding-bottom: 4.006vh;  /* 25px / 624px * 100 */
     rotate: 10deg;
     z-index: 2;
 }
