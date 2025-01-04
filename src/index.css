@@ -6,6 +6,7 @@ body {
   z-index: -1;
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 code {

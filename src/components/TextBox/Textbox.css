@@ -1,0 +1,15 @@
+.text-box {
+    display: inline-block;
+    border: 0.2vmax solid #000;
+    color: #000;
+    font-family: 'Bangers', sans-serif;
+    text-align: center;
+    z-index: 10;
+}
+
+.text-box p {
+    margin: 0;
+    word-wrap: break-word;
+    text-transform: uppercase; /* Makes the text all caps */
+    font-weight: 900;
+}
