@@ -8,14 +8,14 @@ const Banner = () => {
       <div className="banner-dots"></div>
 
       <div className="burst left">
-        <img src="/images/bubble1.png" alt="POW Bubble" />
+        <img src="/images/bursts/bubble1.png" alt="POW Bubble" />
         <span className="bubble-text-left">SOFTWARE</span>
       </div>
 
       <h1 className="banner-text">Nithin Sivakumar</h1>
 
       <div className="burst right">
-        <img src="/images/bubble3.png" alt="BAM Bubble" />
+        <img src="/images/bursts/bubble3.png" alt="BAM Bubble" />
         <span className="bubble-text-right">ENGINEER</span>
       </div>
 

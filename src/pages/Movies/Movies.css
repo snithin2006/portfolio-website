@@ -1,0 +1,20 @@
+/* General styles for the Movies page */
+.movies-page {
+    padding-top: 5vh;
+    background-color: black;
+    font-family: 'Bangers', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* Movies list grid */
+.movies-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+/* Title inside each movie item */
+.movie-title {
+    font-size: 2rem;
+}

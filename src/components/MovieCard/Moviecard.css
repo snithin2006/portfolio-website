@@ -1,0 +1,22 @@
+.movie-card {
+    display: inline-block;
+    width: 20vmax;
+    margin: 2vmax;
+    background-color: #f4f4f4;
+    box-shadow: 0.5vmax 0.5vmax 1vmax rgba(0, 0, 0, 0.5);
+    font-family: 'Bangers', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+    display: block;
+}
