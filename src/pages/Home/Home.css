@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 0%; /* Replaced px with % */
-  padding-bottom: 0%; /* Replaced px with % */
+  padding-top: 1vh; /* Replaced px with % */
+  padding-right: 1vh; /* Replaced px with % */
 }
 
 .hero-section {
-  background-color: black;
+  background-color: #f6efd6;
+  padding-bottom: 1vh; /* Replaced px with % */
 }
 
 body {

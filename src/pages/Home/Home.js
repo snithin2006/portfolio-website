@@ -12,14 +12,9 @@ function Home() {
       <Banner />
       <div className="hero-section">        
         <div className="row">
-          <ComicPanel width={300} height={300} color="#59e2fc" />
-          <ComicPanel width={300} height={300} color="#ec9a1c" />
-          <ComicPanel width={300} height={300} color="#ab47bc" />
-        </div>
-        <div className="row">
-          <ComicPanel width={300} height={300} color="#59e2fc" />
-          <ComicPanel width={300} height={300} color="#ec9a1c" />
-          <ComicPanel width={300} height={300} color="#ab47bc" />
+          <ComicPanel width={70} height={25} color="#53d2e7" />
+          <ComicPanel width={100} height={25} color="#f2b22a" />
+          <ComicPanel width={50} height={25} color="#4ad6cd" />
         </div>
       </div>
     </div>

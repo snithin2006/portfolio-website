@@ -6,8 +6,8 @@ const ComicPanel = ({ width, height, color }) => {
     <div
       className="comic-panel"
       style={{
-        width: `${width}px`,
-        height: `${height}px`,
+        width: `${width}vw`,
+        height: `${height}vw`,
         backgroundColor: color,
       }}
     >
