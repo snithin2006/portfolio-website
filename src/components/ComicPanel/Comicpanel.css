@@ -3,6 +3,7 @@
     border: 0.3vw solid black;
     margin-left: 1vh;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .comic-dots {
@@ -11,8 +12,49 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, black 0.26vw, transparent 0vw);
-    background-size: 5% 5%;
+    background: radial-gradient(circle, rgba(2, 2, 2, 0.4) 50%, transparent 50%);
+    background-size: 1.5vh 1.5vh;
     opacity: 1;
     z-index: 1;
+    /* Ensure dots are below other content */
+    pointer-events: none;
+}
+
+.comic-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.comic-text {
+    position: relative;
+    z-index: 3;
+    padding: 1vw;
+    font-family: 'Bangers', cursive, sans-serif;
+    line-height: 1.5;
+    color: black;
+    /* Optional: Adds a semi-transparent background for better readability */
+}
+
+.comic-text strong {
+    text-align: left;
+    font-weight: 900;
+}
+
+.comic-text regular {
+    text-align: left;
+    font-size: 1.4vw;
+}
+
+.comic-text contact {
+    position: absolute; /* Absolutely position inside the bubble */
+    top: 350%; /* Adjust this value to move text up or down */
+    left: 16%; /* Adjust this value to move text left or right */
+    text-align: center;
 }

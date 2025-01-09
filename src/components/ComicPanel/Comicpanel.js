@@ -1,7 +1,14 @@
 import React from 'react';
 import './Comicpanel.css';
 
-const ComicPanel = ({ width, height, color }) => {
+const ComicPanel = ({
+  width,
+  height,
+  color,
+  showDots = true,
+  image = null,
+  text = '',
+}) => {
   return (
     <div
       className="comic-panel"
@@ -11,7 +18,21 @@ const ComicPanel = ({ width, height, color }) => {
         backgroundColor: color,
       }}
     >
-      <div className="comic-dots"></div>
+      {showDots && <div className="comic-dots"></div>}
+      {image && (
+        <div
+          className="comic-image"
+          style={{
+            backgroundImage: `url(${image})`,
+          }}
+        ></div>
+      )}
+      {text && (
+        <div
+          className="comic-text"
+          dangerouslySetInnerHTML={{ __html: text }}
+        ></div>
+      )}
     </div>
   );
 };

@@ -2,15 +2,105 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 1vh; /* Replaced px with % */
-  padding-right: 1vh; /* Replaced px with % */
+  padding-top: 1vh;
+  /* Replaced px with % */
+  padding-right: 1vh;
+  /* Replaced px with % */
 }
 
 .hero-section {
-  background-color: #f6efd6;
-  padding-bottom: 1vh; /* Replaced px with % */
+  background-color: #e9e9bf;
+  padding-bottom: 1vh;
+  /* Replaced px with % */
 }
 
 body {
   padding-top: 10vh;
+}
+
+.contact-box {
+  position: absolute;
+  z-index: 100;
+  top: 44.5vh;
+  left: 165vh;
+}
+
+
+
+
+
+
+
+/* General container for social media links */
+.social-media {
+  position: absolute;
+  top: 73.5vh;
+  left: 175vh;
+  display: flex;
+  gap: 1vw;
+  /* Spacing between icons */
+  justify-content: center;
+  z-index: 5;
+}
+
+/* Icon styling */
+.social-icon {
+  width: 2.75vw; /* Size of the icon */
+  height: auto;
+  border: 0.2vw solid black; /* Bold black outline */
+  border-radius: 50%; /* Circular shape */
+  background-color: white; /* White background */
+  padding: 0.2vw; /* Spacing between the icon and the border */
+  box-shadow: 0.1vw 0.1vw 0 black; /* Comic-style shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effects */
+.social-icon:hover {
+  transform: rotate(-5deg) scale(1.2); /* Tilt and enlarge the icon */
+  box-shadow: 0.2vw 0.2vw 0 black; /* Emphasize shadow */
+  background-color: #ffe600; /* Vibrant yellow background */
+}
+
+/* Wrapper for each icon */
+.icon-wrapper {
+  position: relative;
+}
+
+/* Speech bubble styling */
+.speech-bubble {
+  position: absolute;
+  top: -3vw; /* Position above the icon */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  background-color: #f9ec5a;
+  color: black;
+  padding: 0.5vw 0.5vw; /* Padding inside the bubble */
+  border: 0.15vw solid black;
+  border-radius: 0.5vw; /* Rounded corners */
+  font-family: 'Bangers', cursive, sans-serif;
+  font-size: 1vw;
+  box-shadow: 0.2vw 0.2vw 0 black; /* Comic-style shadow */
+  display: none; /* Hidden by default */
+  white-space: nowrap; /* Prevent text wrapping */
+  z-index: 10;
+}
+
+/* Show speech bubble on hover */
+.icon-wrapper:hover .speech-bubble {
+  display: block;
+}
+
+/* Additional hover effect for the bubble */
+.icon-wrapper:hover .speech-bubble {
+  animation: pop 0.3s ease-out; /* Slight "pop" effect */
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8) translateX(-50%);
+  }
+  100% {
+    transform: scale(1) translateX(-50%);
+  }
 }
