@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './Moviemodal.css';
+import './Modal.css';
 
-const MovieModal = ({ isOpen, onClose, image, name, description, rating }) => {
+const Modal = ({ isOpen, onClose, image, name, description, rating }) => {
     const [isActive, setIsActive] = useState(false);
 
     useEffect(() => {
@@ -38,4 +38,4 @@ const MovieModal = ({ isOpen, onClose, image, name, description, rating }) => {
     );
 };
 
-export default MovieModal;
+export default Modal;

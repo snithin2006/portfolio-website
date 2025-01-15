@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MovieCard from '../../components/MovieCard/Moviecard';
-import MovieModal from '../../components/MovieModal/Moviemodal';
+import Modal from '../../components/Modal/Modal';
 import Navbar from '../../components/NavBar/Navbar';
 import './Movies.css';
 
@@ -36,7 +36,7 @@ const Movies = () => {
                     </div>
                 ))}
             </div>
-            <MovieModal
+            <Modal
                 isOpen={isModalOpen}
                 onClose={closeModal}
                 image={selectedMovie?.image}

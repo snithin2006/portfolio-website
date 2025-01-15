@@ -1,0 +1,10 @@
+.demoPage {
+    position: relative;
+    background-color: white; /* Set the page color to white */
+    border: 1px solid #ddd; /* Optional: Add a light border around pages */
+    box-shadow: inset -5px 0 10px rgba(0, 0, 0, 0.2), inset 5px 0 10px rgba(0, 0, 0, 0.2); /* Add shadow to create a separation effect */
+    color: black; /* Set text color to black for better readability */
+    padding: 20px; /* Add padding inside the page */
+    font-family: Arial, sans-serif; /* Optional: Change font family */
+    box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+}

@@ -1,4 +1,17 @@
-.demoPage {
+.projects-page {
+    padding-top: 5vh;
+    background-color: black;
+    font-family: 'Bangers', sans-serif;
+    text-align: center;
     color: white;
-    background-color: blue;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.projects-title {
+    font-size: 2rem;
 }
