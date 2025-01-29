@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MovieCard from '../../components/MovieCard/Moviecard';
+import ImageCard from '../../components/ImageCard/Imagecard';
 import Modal from '../../components/Modal/Modal';
 import Navbar from '../../components/NavBar/Navbar';
 import './Movies.css';
@@ -32,7 +32,7 @@ const Movies = () => {
             <div className="movies-list">
                 {movies.map((movie, index) => (
                     <div key={index} onClick={() => openModal(movie)}>
-                        <MovieCard name={movie.name} image={movie.image} />
+                        <ImageCard name={movie.name} image={movie.image} />
                     </div>
                 ))}
             </div>

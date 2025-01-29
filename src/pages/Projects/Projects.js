@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../../components/NavBar/Navbar';
-import ProjectCard from '../../components/ProjectCard/Projectcard';
+import ImageCard from '../../components/ImageCard/Imagecard';
 import Modal from '../../components/Modal/Modal';
 import './Projects.css';
 import HTMLFlipBook from 'react-pageflip';
@@ -33,7 +33,7 @@ const Projects = () => {
             <div className="projects-list">
                 {projects.map((project, index) => (
                     <div key={index} onClick={() => openModal(project)}>
-                        <ProjectCard name={project.name} image={project.image} />
+                        <ImageCard name={project.name} image={project.image} />
                     </div>
                 ))}
             </div>

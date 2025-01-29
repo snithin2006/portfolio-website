@@ -1,4 +1,4 @@
-.movie-card {
+.card {
     display: inline-block;
     width: 20vmax;
     margin: 2vmax;
@@ -10,12 +10,12 @@
     position: relative;
 }
 
-.movie-card:hover {
+.card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
 
-.movie-poster {
+.poster {
     width: 100%;
     height: auto;
     display: block;
