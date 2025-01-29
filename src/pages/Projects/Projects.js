@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import ProjectCard from '../../components/ProjectCard/Projectcard';
 import Navbar from '../../components/NavBar/Navbar';
+import ProjectCard from '../../components/ProjectCard/Projectcard';
+import Modal from '../../components/Modal/Modal';
 import './Projects.css';
+import HTMLFlipBook from 'react-pageflip';
 
 const Projects = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,6 +37,14 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
+            <Modal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+                image={selectedProject?.image}
+                name="name"
+                description="desc"
+                rating="rating"
+            />
         </div>
     );
 };

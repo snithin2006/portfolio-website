@@ -20,7 +20,7 @@
     cursor: pointer;
     box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4),
         inset 300px 0 50px rgba(0, 0, 0, 0.4);
-    transform: perspective(2000px) rotateZ(0);
+    transform: perspective(2000px);
     transform-style: preserve-3d;
     transition: all 1s ease;
 }
