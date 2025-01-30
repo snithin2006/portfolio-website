@@ -6,7 +6,6 @@ const Modal = ({ isOpen, onClose, image, name, description, rating }) => {
 
     useEffect(() => {
         if (isOpen) {
-            // Small delay to ensure modal is rendered before animation
             setTimeout(() => {
                 setIsActive(true);
             }, 100);
@@ -17,6 +16,7 @@ const Modal = ({ isOpen, onClose, image, name, description, rating }) => {
 
     if (!isOpen) return null;
 
+    
     return (
         <div className="main" onClick={onClose}>
             <div

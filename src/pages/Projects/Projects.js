@@ -4,6 +4,7 @@ import ImageCard from '../../components/ImageCard/Imagecard';
 import Modal from '../../components/Modal/Modal';
 import './Projects.css';
 import HTMLFlipBook from 'react-pageflip';
+import FlipBook from '../../components/FlipBook/Flipbook';
 
 const Projects = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -37,7 +38,7 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
-            <Modal
+            <FlipBook
                 isOpen={isModalOpen}
                 onClose={closeModal}
                 image={selectedProject?.image}
