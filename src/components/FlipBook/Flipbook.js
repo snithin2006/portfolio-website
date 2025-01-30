@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Flipbook.css';
 import HTMLFlipBook from 'react-pageflip';
+import Page from '../Page/Page';
 
 const FlipBook = ({ isOpen, onClose, image, name, description }) => {
     const [isActive, setIsActive] = useState(false);
@@ -28,7 +29,7 @@ const FlipBook = ({ isOpen, onClose, image, name, description }) => {
     if (!isOpen) return null;
 
     return (
-        <div className="main">
+        <div className="main" onClick={onClose}>
             {!isFlipped && (
                 <div
                     className={`card ${isActive ? 'active' : ''}`}
@@ -48,12 +49,23 @@ const FlipBook = ({ isOpen, onClose, image, name, description }) => {
 
 
             {isFlipped && (
-                <div className="flipbook-container">
-                    <HTMLFlipBook width={300} height={500}>
-                        <div className="demoPage">Page 1</div>
-                        <div className="demoPage">Page 2</div>
-                        <div className="demoPage">Page 3</div>
-                        <div className="demoPage">Page 4</div>
+                <div className="flipbook-container" onClick={(e) => e.stopPropagation()}>
+                    <HTMLFlipBook
+                        width={window.innerHeight * 0.5}
+                        height={window.innerHeight * 0.7}
+                    >
+                        <Page number="1">
+                            Welcome to {name}
+                        </Page>
+                        <Page number="2">
+                            {description}
+                        </Page>
+                        <Page number="3">
+                            Project Details
+                        </Page>
+                        <Page number="4">
+                            Thank you for viewing!
+                        </Page>
                     </HTMLFlipBook>
                 </div>
             )}

@@ -51,7 +51,6 @@
     transform: rotateY(180deg);
 }
 
-/* Replace hover states with active class */
 .card.active {
     transform: perspective(2000px) rotateZ(0deg);
     box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4),
@@ -71,11 +70,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     font-size: 1.5rem;
     padding-right: 20%;
     color: rgb(0, 0, 0);
 }
 
 .flipbook-container {
-    background-color: rebeccapurple;
+    width: 100vh;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
 }
