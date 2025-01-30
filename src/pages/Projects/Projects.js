@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../../components/NavBar/Navbar';
 import ImageCard from '../../components/ImageCard/Imagecard';
-import Modal from '../../components/Modal/Modal';
 import './Projects.css';
-import HTMLFlipBook from 'react-pageflip';
 import FlipBook from '../../components/FlipBook/Flipbook';
 
 const Projects = () => {
