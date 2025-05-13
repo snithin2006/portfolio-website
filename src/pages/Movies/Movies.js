@@ -14,6 +14,7 @@ const Movies = () => {
         { name: 'Zodiac', image: '/images/movies/zodiac.png', description: 'Good movie', rating: '10' },
         { name: 'John Wick', image: '/images/movies/johnwick.png', description: 'Good movie', rating: '10' },
         { name: 'Mission Impossible', image: '/images/movies/mi.png', description: 'Good movie', rating: '10' },
+        { name: 'Leo', image: '/images/movies/leo.png', description: 'Amazing movie', rating: '10' },
     ];
 
     const openModal = (movie) => {

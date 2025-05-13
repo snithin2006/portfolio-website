@@ -3,6 +3,7 @@ import Navbar from '../../components/NavBar/Navbar';
 import ComicPanel from '../../components/ComicPanel/Comicpanel';
 import Banner from '../../components/Banner/Banner';
 import TextBox from '../../components/TextBox/Textbox';
+import SpeechBubblePanel from '../../components/ComicPanel/SpeechBubblePanel';
 import './Home.css';
 
 
@@ -14,7 +15,7 @@ const authorText = `
   innovative solutions that make a real-world impact. My journey in computer science 
   has led me to explore artificial intelligence, community-driven platforms, and, of course, 
   this comic-style portfolio.<br /><br />
-  When I’m not writing code, I enjoy delving into classic Marvel comics, watching and reviewing movies, experimenting with new technologies, and brainstorming ways to merge art and engineering.<br /><br />
+  When I'm not writing code, I enjoy delving into classic Marvel comics, watching and reviewing movies, experimenting with new technologies, and brainstorming ways to merge art and engineering.<br /><br />
   <regular>
 `;
 
@@ -44,39 +45,39 @@ function Home() {
             text={authorText}
           />
 
-          <ComicPanel
+          <SpeechBubblePanel
             width={50}
             height={26}
-            color="#4ad6cd"
-            image={'/images/bubbles/speechbubble.png'}
-            text={contactText}
-          />
+            bubbleImage={'/images/bubbles/speechbubble.png'}
+          >
+            <div className="contact-box-inside-panel">
+              <TextBox text="Contact Me!" fontSize='1.5vw' padding='0.2vw' backgroundColor={'#f9ec5a'} />
+            </div>
+            <div className="speech-bubble-contact-text">
+              <div dangerouslySetInnerHTML={{ __html: contactText }} />
+            </div>
+            <div className="social-media-inside">
+              <a href="https://www.instagram.com/nithin.s06/" target="_blank" rel="noopener noreferrer">
+                <div className="icon-wrapper">
+                  <img src="/images/socials/insta.png" alt="Instagram" className="social-icon" />
+                  <span className="speech-bubble">Follow me!</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/nithin-sivakumar/" target="_blank" rel="noopener noreferrer">
+                <div className="icon-wrapper">
+                  <img src="/images/socials/linkedin.png" alt="LinkedIn" className="social-icon" />
+                  <span className="speech-bubble">Let's Connect!</span>
+                </div>
+              </a>
+              <a href="https://github.com/snithin2006" target="_blank" rel="noopener noreferrer">
+                <div className="icon-wrapper">
+                  <img src="/images/socials/github.png" alt="GitHub" className="social-icon" />
+                  <span className="speech-bubble">Check out my code!</span>
+                </div>
+              </a>
+            </div>
+          </SpeechBubblePanel>
         </div>
-      </div>
-
-      <div className="contact-box">
-        <TextBox text="Contact Me!" fontSize='1.5vw' padding='0.2vw' backgroundColor={'#f9ec5a'} />
-      </div>
-
-      <div class="social-media">
-        <a href="https://www.instagram.com/nithin.s06/" target="_blank" rel="noopener noreferrer">
-          <div class="icon-wrapper">
-            <img src="/images/socials/insta.png" alt="Instagram" class="social-icon" />
-              <span class="speech-bubble">Follow me!</span>
-          </div>
-        </a>
-        <a href="https://github.com/snithin2006" target="_blank" rel="noopener noreferrer">
-          <div class="icon-wrapper">
-            <img src="/images/socials/linkedin.png" alt="LinkedIn" class="social-icon" />
-              <span class="speech-bubble">Let's Connect!</span>
-          </div>
-        </a>
-        <a href="https://github.com/snithin2006" target="_blank" rel="noopener noreferrer">
-          <div class="icon-wrapper">
-            <img src="/images/socials/github.png" alt="GitHub" class="social-icon" />
-              <span class="speech-bubble">Check out my code!</span>
-          </div>
-        </a>
       </div>
 
     </div>

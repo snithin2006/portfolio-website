@@ -8,6 +8,7 @@ const ComicPanel = ({
   showDots = true,
   image = null,
   text = '',
+  children,
 }) => {
   return (
     <div
@@ -32,6 +33,11 @@ const ComicPanel = ({
           className="comic-text"
           dangerouslySetInnerHTML={{ __html: text }}
         ></div>
+      )}
+      {children && (
+        <div className="comic-children">
+          {children}
+        </div>
       )}
     </div>
   );

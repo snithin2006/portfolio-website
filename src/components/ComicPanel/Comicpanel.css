@@ -58,3 +58,12 @@
     left: 16%; /* Adjust this value to move text left or right */
     text-align: center;
 }
+
+.comic-children {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  width: 100%;
+}

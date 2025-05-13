@@ -21,8 +21,8 @@ body {
 .contact-box {
   position: absolute;
   z-index: 100;
-  top: 44.5vh;
-  left: 165vh;
+  top: 40.5vh;
+  left: 145vh;
 }
 
 
@@ -34,8 +34,8 @@ body {
 /* General container for social media links */
 .social-media {
   position: absolute;
-  top: 73.5vh;
-  left: 175vh;
+  top: 66vh;
+  left: 154.5vh;
   display: flex;
   gap: 1vw;
   /* Spacing between icons */
@@ -103,4 +103,45 @@ body {
   100% {
     transform: scale(1) translateX(-50%);
   }
+}
+
+.social-media-inside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+  margin-top: 2vh;
+}
+
+.social-media-inside .social-icon {
+  width: 2vw;
+  min-width: 28px;
+  max-width: 40px;
+  padding: 0.2vw;
+}
+
+@media (max-width: 900px) {
+  .social-media-inside .social-icon {
+    width: 5vw;
+    min-width: 24px;
+    max-width: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .social-media-inside .social-icon {
+    width: 8vw;
+    min-width: 20px;
+    max-width: 32px;
+  }
+}
+
+.speech-bubble-contact-text {
+  margin-bottom: 2vh;
+  font-family: 'Bangers', cursive, sans-serif;
+  font-size: 1.3vw;
+  color: black;
+  width: 100%;
+  text-align: center;
 }
