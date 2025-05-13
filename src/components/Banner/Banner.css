@@ -28,7 +28,7 @@
     position: relative;
     font-size: 7.5vmax;
     font-family: 'Bangers', sans-serif;
-    color: #f9ec5a;
+    color: #f9f401;
     font-weight: bold;
     text-transform: uppercase;
     padding-left: 1.5%;
@@ -39,7 +39,7 @@
         0.26vw -0.26vw 0 #000,
         -0.26vw 0.26vw 0 #000,
         0.26vw 0.26vw 0 #000;
-    filter: drop-shadow(-0.434vw 0.521vw 0.065vw #000) drop-shadow(0.26vw -0.26vw 0.065vw rgba(255, 0, 0, 1)) drop-shadow(0.174vw 0.174vw 0.065vw rgba(255, 0, 0, 1)) drop-shadow(-0.521vw 0.347vw 0.065vw rgba(255, 0, 0, 1));
+    filter: drop-shadow(-0.434vw 0.521vw 0.065vw #000) drop-shadow(0.26vw -0.26vw 0.065vw #f14223) drop-shadow(0.174vw 0.174vw 0.065vw #f14223) drop-shadow(-0.521vw 0.347vw 0.065vw #f14223);
 }
 
 .burst {
@@ -67,7 +67,7 @@
     height: auto;
     z-index: 1;
     padding-top: 0vh;
-    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #4bd3cc) drop-shadow(0.26vw -0.26vw 0.087vw #4bd3cc) drop-shadow(-0.26vw -0.26vw 0.087vw #4bd3cc) drop-shadow(0.26vw 0.26vw 0.087vw #4bd3cc);
+    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #4ddce5) drop-shadow(0.26vw -0.26vw 0.087vw #4ddce5) drop-shadow(-0.26vw -0.26vw 0.087vw #4ddce5) drop-shadow(0.26vw 0.26vw 0.087vw #4ddce5);
     rotate: -10deg;
     transform: translateX(10%);
 }
@@ -77,7 +77,7 @@
     height: auto;
     z-index: 1;
     padding-top: 10vh;
-    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #4bd3cc) drop-shadow(0.26vw -0.26vw 0.087vw #4bd3cc) drop-shadow(-0.26vw -0.26vw 0.087vw #4bd3cc) drop-shadow(0.26vw 0.26vw 0.087vw #4bd3cc);
+    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #4ddce5) drop-shadow(0.26vw -0.26vw 0.087vw #4ddce5) drop-shadow(-0.26vw -0.26vw 0.087vw #4ddce5) drop-shadow(0.26vw 0.26vw 0.087vw #4ddce5);
     rotate: 10deg;
     transform: translateX(5%);
     /* Flips the image horizontally */
@@ -89,7 +89,7 @@
     font-size: 4.5vw;
     font-weight: bold;
     letter-spacing: 0.521vw;
-    color: #fa596a;
+    color: #f14223;
     text-shadow:
         -0.26vw -0.26vw 0 #000,
         0.26vw -0.26vw 0 #000,
@@ -109,7 +109,7 @@
     font-size: 5vw;
     font-weight: bold;
     letter-spacing: 0.521vw;
-    color: #fa596a;
+    color: #f14223;
     text-shadow:
         -0.26vw -0.26vw 0 #000,
         0.26vw -0.26vw 0 #000,

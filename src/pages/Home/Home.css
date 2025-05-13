@@ -1,3 +1,5 @@
+@import url('https://db.onlinewebfonts.com/c/21f923b6b85ae8f910b453f4c6a60442?family=CCMeanwhile+Regular');
+
 .row {
   display: flex;
   flex-direction: row;
@@ -9,7 +11,7 @@
 }
 
 .hero-section {
-  background-color: #e9e9bf;
+  background-color: #c7e8ef;
   padding-bottom: 1vh;
   /* Replaced px with % */
 }
@@ -67,24 +69,6 @@ body {
   position: relative;
 }
 
-/* Speech bubble styling */
-.speech-bubble {
-  position: absolute;
-  top: -3vw; /* Position above the icon */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%);
-  background-color: #f9ec5a;
-  color: black;
-  padding: 0.5vw 0.5vw; /* Padding inside the bubble */
-  border: 0.15vw solid black;
-  border-radius: 0.5vw; /* Rounded corners */
-  font-family: 'Bangers', cursive, sans-serif;
-  font-size: 1vw;
-  box-shadow: 0.2vw 0.2vw 0 black; /* Comic-style shadow */
-  display: none; /* Hidden by default */
-  white-space: nowrap; /* Prevent text wrapping */
-  z-index: 10;
-}
 
 /* Show speech bubble on hover */
 .icon-wrapper:hover .speech-bubble {
@@ -138,10 +122,28 @@ body {
 }
 
 .speech-bubble-contact-text {
-  margin-bottom: 2vh;
-  font-family: 'Bangers', cursive, sans-serif;
-  font-size: 1.3vw;
-  color: black;
+  margin-top: 0.5vh;
+  margin-bottom: -0.5vh;
+  font-family: 'CCMeanwhile Regular', cursive, sans-serif;
+  font-size: 0.9vw;
+  color: #fdfbf9;
   width: 100%;
   text-align: center;
+  font-weight: 400;
+  text-shadow:
+    0.2px 0 0 #ffffff,
+    0 0.2px 0 #ffffff,
+    -0.2px 0 0 #ffffff,
+    0 -0.2px 0 #ffffff;
+}
+
+.comic-text regular {
+  font-family: 'CCMeanwhile Regular';
+  font-size: 1vw;
+  font-weight: 400;
+  text-shadow:
+    0.5px 0 0 #000,
+    0 0.5px 0 #000,
+    -0.5px 0 0 #000,
+    0 -0.5px 0 #000;
 }

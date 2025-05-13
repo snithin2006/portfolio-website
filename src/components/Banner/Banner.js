@@ -20,11 +20,11 @@ const Banner = () => {
       </div>
 
       <div className="top-left-text">
-        <TextBox text="Hailing from..." fontSize='1.5vw' padding='0.2vw' backgroundColor={'#f9ec5a'} />
+        <TextBox text="Hailing from..." fontSize='1.5vw' padding='0.2vw' backgroundColor={'#f9f401'} />
       </div>
 
       <div className="bottom-right-text">
-        <TextBox text="Dallas, Texas" fontSize='1.5vw' padding='0.2vw' backgroundColor={'#f9ec5a'} />
+        <TextBox text="Dallas, Texas" fontSize='1.5vw' padding='0.2vw' backgroundColor={'#f9f401'} />
       </div>
     </div>
   );
