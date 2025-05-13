@@ -34,11 +34,7 @@ const ComicPanel = ({
           dangerouslySetInnerHTML={{ __html: text }}
         ></div>
       )}
-      {children && (
-        <div className="comic-children">
-          {children}
-        </div>
-      )}
+      {children}
     </div>
   );
 };

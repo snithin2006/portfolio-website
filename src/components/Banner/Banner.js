@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './Banner.css';
 import TextBox from '../TextBox/Textbox';
@@ -20,11 +21,11 @@ const Banner = () => {
       </div>
 
       <div className="top-left-text">
-        <TextBox text="Hailing from..." fontSize='1.5vw' padding='0.2vw' backgroundColor={'#f9f401'} />
+        <TextBox text="Hailing from..." fontSize='1.5vw' padding='0.2vw' backgroundColor={'#f9f401'} fontFamily={'CCMeanwhile'} />
       </div>
 
       <div className="bottom-right-text">
-        <TextBox text="Dallas, Texas" fontSize='1.5vw' padding='0.2vw' backgroundColor={'#f9f401'} />
+        <TextBox text="Dallas, Texas" fontSize='1.5vw' padding='0.2vw' backgroundColor={'#f9f401'} fontFamily={'CCMeanwhile'} />
       </div>
     </div>
   );

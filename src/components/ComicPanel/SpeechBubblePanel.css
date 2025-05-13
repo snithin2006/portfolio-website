@@ -60,9 +60,16 @@
   padding: 0.2vw;
 }
 
-.contact-box-inside-panel {
+.contact-me-box {
   position: absolute;
-  top: -8vw;
-  left: -2vw;
+  top: -7.8vw;
+  left: -1.8vw;
+  z-index: 10;
+} 
+
+.about-me-box {
+  position: absolute;
+  top: 2vw;
+  left: 0vw;
   z-index: 10;
 } 
