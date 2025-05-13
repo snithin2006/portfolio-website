@@ -69,7 +69,7 @@
     height: auto;
     z-index: 1;
     padding-top: 0vh;
-    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #c7e8ef) drop-shadow(0.26vw -0.26vw 0.087vw #c7e8ef) drop-shadow(-0.26vw -0.26vw 0.087vw #c7e8ef) drop-shadow(0.26vw 0.26vw 0.087vw #c7e8ef);
+    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #f14223) drop-shadow(0.26vw -0.26vw 0.087vw #f14223) drop-shadow(-0.26vw -0.26vw 0.087vw #f14223) drop-shadow(0.26vw 0.26vw 0.087vw #f14223);
     rotate: -10deg;
     transform: translateX(10%);
 }
@@ -79,7 +79,7 @@
     height: auto;
     z-index: 1;
     padding-top: 10vh;
-    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #c7e8ef) drop-shadow(0.26vw -0.26vw 0.087vw #c7e8ef) drop-shadow(-0.26vw -0.26vw 0.087vw #c7e8ef) drop-shadow(0.26vw 0.26vw 0.087vw #c7e8ef);
+    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #f14223) drop-shadow(0.26vw -0.26vw 0.087vw #f14223) drop-shadow(-0.26vw -0.26vw 0.087vw #f14223) drop-shadow(0.26vw 0.26vw 0.087vw #f14223);
     rotate: 10deg;
     transform: translateX(5%);
     /* Flips the image horizontally */
@@ -91,7 +91,7 @@
     font-size: 4.5vw;
     font-weight: bold;
     letter-spacing: 0.521vw;
-    color: #f14223;
+    color: #f9f401;
     text-shadow:
         -0.26vw -0.26vw 0 #000,
         0.26vw -0.26vw 0 #000,
@@ -111,7 +111,7 @@
     font-size: 5vw;
     font-weight: bold;
     letter-spacing: 0.521vw;
-    color: #f14223;
+    color: #f9f401;
     text-shadow:
         -0.26vw -0.26vw 0 #000,
         0.26vw -0.26vw 0 #000,
