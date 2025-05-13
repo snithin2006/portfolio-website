@@ -32,11 +32,11 @@ function Home() {
       <Banner />
       <div className="hero-section">
         <div className="row">
-          <ComicPanel width={70} height={26} color="#c7e8ef" image={'/images/headshot.png'} />
+          <ComicPanel width={70} height={25.75} color="#c7e8ef" image={'/images/headshot.png'} />
 
           <ComicPanel
             width={100}
-            height={26}
+            height={25.75}
             color="#c7e8ef"
             showDots={false}
           >
@@ -49,7 +49,7 @@ function Home() {
 
           <SpeechBubblePanel
             width={50}
-            height={26}
+            height={25.75}
             color="#c7e8ef"
             bubbleImage={'/images/bubbles/speechbubble.png'}
           >
