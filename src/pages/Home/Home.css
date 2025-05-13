@@ -131,7 +131,8 @@ body {
     0 -0.2px 0 #000000;
 }
 
-.comic-text regular {
+.comic-text {
+  margin-top: 3vw;
   font-family: 'CCMeanwhile Regular';
   font-size: 1vw;
   font-weight: 400;

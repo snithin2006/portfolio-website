@@ -8,15 +8,12 @@ import './Home.css';
 
 
 const authorText = `
-  <regular>
-  The person behind the pixels!<br /><br />
   Hi there! I'm Nithin, a passionate software engineer and comic enthusiast. 
   With a knack for blending creativity and technology, I specialize in crafting 
   innovative solutions that make a real-world impact. My journey in computer science 
   has led me to explore artificial intelligence, community-driven platforms, and, of course, 
   this comic-style portfolio.<br /><br />
   When I'm not writing code, I enjoy delving into classic Marvel comics, watching and reviewing movies, experimenting with new technologies, and brainstorming ways to merge art and engineering.<br /><br />
-  <regular>
 `;
 
 const contactText = `
@@ -47,6 +44,7 @@ function Home() {
             <div className="about-me-box">
               <TextBox text="About Me" fontSize='1.5vw' padding='0.2vw' backgroundColor={'#f9f401'} />
             </div>
+
             <div className="comic-text" dangerouslySetInnerHTML={{ __html: authorText }} />
           </ComicPanel>
 
@@ -73,7 +71,7 @@ function Home() {
                 </div>
               </a>
 
-              <a href="https://www.linkedin.com/in/nithin-sivakumar/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/nithinsiva/" target="_blank" rel="noopener noreferrer">
                 <div className="icon-wrapper">
                   <img src="/images/socials/linkedin.png" alt="LinkedIn" className="social-icon" />
                 </div>
