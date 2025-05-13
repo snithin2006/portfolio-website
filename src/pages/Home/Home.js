@@ -8,12 +8,11 @@ import './Home.css';
 
 
 const authorText = `
-  Hi there! I'm Nithin, a passionate software engineer and comic enthusiast. 
-  With a knack for blending creativity and technology, I specialize in crafting 
-  innovative solutions that make a real-world impact. My journey in computer science 
-  has led me to explore artificial intelligence, community-driven platforms, and, of course, 
-  this comic-style portfolio.<br /><br />
-  When I'm not writing code, I enjoy delving into classic Marvel comics, watching and reviewing movies, experimenting with new technologies, and brainstorming ways to merge art and engineering.<br /><br />
+  Hi there! I’m Nithin Sivakumar, a Computer Science student at The University of Texas at Austin with hands-on experience in backend development, AI/ML applications, and full-stack software engineering. I’ve built impactful tools across industries—from a graph-based, agentic data profiling system to a vector retrieval-based supply chain assistant. I enjoy working across the stack, using technologies like JavaScript, ReactJS, and Flutter for the front end; Python, Java, and various databases for the backend; and integrating AI tools such as LangChain, OpenAI, and OCR pipelines.
+
+  <br /><br />
+
+  Outside of coding, I love watching movies, playing tennis, and playing single player story games. I'd love to chat about any of these topics, so feel free to reach out!
 `;
 
 const contactText = `

@@ -19,8 +19,8 @@
     width: 100%;
     height: 100%;
     background-image:
-        radial-gradient(circle, #fdffff 0.26vw, transparent 0.174vw),
-        radial-gradient(circle, #fdffff 0.26vw, transparent 0.174vw);
+        radial-gradient(circle, #feeeca 0.26vw, transparent 0.174vw),
+        radial-gradient(circle, #feeeca 0.26vw, transparent 0.174vw);
     background-size: 1.389vw 1.389vw;
     background-position: 0 0, 0.694vw 0.694vw;
     z-index: 1;
@@ -69,7 +69,7 @@
     height: auto;
     z-index: 1;
     padding-top: 0vh;
-    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #4ddce5) drop-shadow(0.26vw -0.26vw 0.087vw #4ddce5) drop-shadow(-0.26vw -0.26vw 0.087vw #4ddce5) drop-shadow(0.26vw 0.26vw 0.087vw #4ddce5);
+    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #c7e8ef) drop-shadow(0.26vw -0.26vw 0.087vw #c7e8ef) drop-shadow(-0.26vw -0.26vw 0.087vw #c7e8ef) drop-shadow(0.26vw 0.26vw 0.087vw #c7e8ef);
     rotate: -10deg;
     transform: translateX(10%);
 }
@@ -79,7 +79,7 @@
     height: auto;
     z-index: 1;
     padding-top: 10vh;
-    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #4ddce5) drop-shadow(0.26vw -0.26vw 0.087vw #4ddce5) drop-shadow(-0.26vw -0.26vw 0.087vw #4ddce5) drop-shadow(0.26vw 0.26vw 0.087vw #4ddce5);
+    filter: drop-shadow(-0.26vw 0.26vw 0.087vw #c7e8ef) drop-shadow(0.26vw -0.26vw 0.087vw #c7e8ef) drop-shadow(-0.26vw -0.26vw 0.087vw #c7e8ef) drop-shadow(0.26vw 0.26vw 0.087vw #c7e8ef);
     rotate: 10deg;
     transform: translateX(5%);
     /* Flips the image horizontally */
