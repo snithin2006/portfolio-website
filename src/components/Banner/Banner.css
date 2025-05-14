@@ -24,6 +24,16 @@
     background-size: 1.389vw 1.389vw;
     background-position: 0 0, 0.694vw 0.694vw;
     z-index: 1;
+    animation: dotsMove 12s linear infinite;
+}
+
+@keyframes dotsMove {
+    0% {
+        background-position: 0 0, 0.694vw 0.694vw;
+    }
+    100% {
+        background-position: 2vw 2vw, 2.694vw 2.694vw;
+    }
 }
 
 .banner-text {

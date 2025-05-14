@@ -18,8 +18,8 @@ body::before {
   height: 100vh;
   pointer-events: none;
   z-index: 9999;
-  background: url('../public/images/noise.png');
-  opacity: 1;
+  background: url('../public/images/noise2.png');
+  opacity: 0.8;
   mix-blend-mode: multiply;
   background-repeat: repeat;
 }
