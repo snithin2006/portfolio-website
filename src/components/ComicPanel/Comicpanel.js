@@ -18,14 +18,20 @@ const ComicPanel = ({
   const [powPanel, setPowPanel] = useState(null);
   const [powPos, setPowPos] = useState({ x: 0, y: 0 });
   const [powImg, setPowImg] = useState(POW_IMAGES[0]);
+  const [powSize, setPowSize] = useState(60);
+  const [powTilt, setPowTilt] = useState(0);
 
   const handlePanelMouseEnter = (panelIndex) => {
     const x = Math.random() * 80;
     const y = Math.random() * 80;
     const img = POW_IMAGES[Math.floor(Math.random() * POW_IMAGES.length)];
+    const size = 50 + Math.random() * 30; // 50px to 80px
+    const tilt = -40 + Math.random() * 80; // -40deg to +40deg
     setPowPanel(panelIndex);
     setPowPos({ x, y });
     setPowImg(img);
+    setPowSize(size);
+    setPowTilt(tilt);
     setTimeout(() => setPowPanel(null), 400);
   };
 
@@ -64,10 +70,10 @@ const ComicPanel = ({
             position: 'absolute',
             left: `${powPos.x}%`,
             top: `${powPos.y}%`,
-            width: '60px',
+            width: `${powSize}px`,
             pointerEvents: 'none',
             zIndex: 20,
-            transform: 'translate(-50%, -50%)',
+            transform: `translate(-50%, -50%) rotate(${powTilt}deg)`,
             animation: 'pow-pop 0.4s cubic-bezier(.36,1.56,.64,1) both'
           }}
         />

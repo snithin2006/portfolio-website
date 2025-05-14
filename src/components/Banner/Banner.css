@@ -1,3 +1,5 @@
+@import url('https://db.onlinewebfonts.com/c/21f923b6b85ae8f910b453f4c6a60442?family=CCMeanwhile+Regular');
+
 .banner-container {
     width: 100%;
     height: 15vmax;
@@ -40,6 +42,12 @@
         -0.26vw 0.26vw 0 #000,
         0.26vw 0.26vw 0 #000;
     filter: drop-shadow(-0.434vw 0.521vw 0.065vw #000) drop-shadow(0.26vw -0.26vw 0.065vw #f14223) drop-shadow(0.174vw 0.174vw 0.065vw #f14223) drop-shadow(-0.521vw 0.347vw 0.065vw #f14223);
+    animation: floatY 4s ease-in-out infinite alternate;
+}
+
+@keyframes floatY {
+    0% { transform: translateY(5px); }
+    100% { transform: translateY(-5px); }
 }
 
 .burst {

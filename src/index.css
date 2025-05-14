@@ -7,9 +7,22 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  filter: brightness(1.15);
 }
 
-
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  background: url('../public/images/noise.png');
+  opacity: 1;
+  mix-blend-mode: multiply;
+  background-repeat: repeat;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
