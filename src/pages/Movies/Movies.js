@@ -13,8 +13,9 @@ const Movies = () => {
         { name: 'Avengers: Infinity War', image: '/images/movies/infinitywar.png', description: 'Good movie', rating: '10' },
         { name: 'Zodiac', image: '/images/movies/zodiac.png', description: 'Good movie', rating: '10' },
         { name: 'John Wick', image: '/images/movies/johnwick.png', description: 'Good movie', rating: '10' },
-        { name: 'Mission Impossible', image: '/images/movies/mi.png', description: 'Good movie', rating: '10' },
+        { name: 'Mission Impossible', image: '/images/movies/mi.jpg', description: 'Good movie', rating: '10' },
         { name: 'Leo', image: '/images/movies/leo.png', description: 'Amazing movie', rating: '10' },
+        { name: 'Vikram', image: '/images/movies/vikram.png', description: 'Amazing movie', rating: '10' },
     ];
 
     const openModal = (movie) => {
