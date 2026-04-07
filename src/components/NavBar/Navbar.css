@@ -3,7 +3,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  height: 10vh;  /* 60px / 624px * 100 */
+  height: 7.5vh;
   width: 100%;
   z-index: 1000;
   display: flex;
@@ -26,8 +26,8 @@ nav {
   text-decoration: none;
   color: #e2ebec;
   font-weight: bold;
-  font-size: 4vmin;
-  padding: 0.4vh 0.20vw;  /* 2px/624px*100 and 3px/1152px*100 */
+  font-size: 3.2vmin;
+  padding: 0.2vh 0.16vw;
   transition: transform 0.2s ease, color 0.3s;
   position: relative;
   display: inline-block;
